@@ -1,3 +1,47 @@
 <H2>Chapter: Filters</H2>
 
-<h4>Filters</h4>
+<h4>AngularJS Filters</h4>
+
+<h4>Adding Filters to Expressions</h4>
+<p>The name is {{name | uppercase}}</p>
+<p>The name is {{name | lowercase}}</p>
+
+<h4>Adding Filters to Directives</h4>
+<li ng-repeat="x in names | orderBy:'name'">
+    {{ x.name + ', ' + x.country }}
+</li>
+
+<h4>The currency Filter</h4>
+<div ng-init="price = 123456"> {{price | currency}}</div>
+
+<h4>The filter Filter</h4>
+<li ng-repeat="x in names | filter : 'i'">
+    {{ x }}
+</li>
+
+<h4>Filter an Array Based on User Input</h4>
+<input type="text" ng-model="test">
+<li ng-repeat="x in names | filter : test ">
+    {{ x }}
+</li>
+
+
+<h4>Sort an Array Based on User Input</h4>
+<table border="1" width="100%">
+    <tr>
+        <th ng-click="orderByMe('name')">Name</th>
+        <th ng-click="orderByMe('country')">Country</th>
+    </tr>
+    <tr ng-repeat="x in names | orderBy:myOrderBy">
+        <td>{{x.name}}</td>
+        <td>{{x.country}}</td>
+    </tr>
+</table>
+
+<h4>Custom Filters</h4>
+<li ng-repeat="x in names2">
+    {{x | myFormat}}
+</li>
+
+
+
