@@ -1,0 +1,24 @@
+<H2>Chapter: AngularJS Model</H2>
+<h4>The ng-model Directive</h4>
+<div>
+    Name: <input ng-model="name">
+</div>
+
+<h4>Two-Way Binding</h4>
+<div>You entered: {{name}}</div>
+
+<h4>Validate User Input</h4>
+<form name="myForm">
+    <input type="email" name="myAddress" ng-model="text">
+    <span ng-show="myForm.myAddress.$error.email"> Not valid e-mail</span>
+</form>
+
+<h4>Application Status</h4>
+valid:{{myForm.myAddress.$valid}}, dirty:{{myForm.myAddress.$dirty}}, touched: {{myForm.myAddress.$touched}}
+
+<h4>CSS Classes</h4>
+<style>
+    input.ng-invalid {
+        background-color: pink;
+    }
+</style>

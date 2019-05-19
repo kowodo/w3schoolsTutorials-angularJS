@@ -7,6 +7,10 @@ angular.module('myApp', [
   'myApp.view2',
   'myApp.002Expressions',
   'myApp.003Modules',
+  'myApp.004Directives',
+  'myApp.005Model',
+  'myApp.006DataBinding',
+  'myApp.007Controllers',
   'myApp.version',
 
 ]).

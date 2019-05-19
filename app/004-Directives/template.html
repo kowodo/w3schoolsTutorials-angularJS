@@ -1,0 +1,43 @@
+<H2>Chapter: AngularJS Directives</H2>
+
+<h4>AngularJS Directives</h4>
+
+<h4>Data Binding</h4>
+<div>
+    Quantity: <input type="number" ng-model="quantity">
+    Costs: <input type="number" ng-model="price">
+
+    Total in dollar: {{ quantity * price }}
+</div>
+<h4>Repeating HTML Elements</h4>
+<div ng-init="names=['Jani','Hege','Kai']">
+    <ul>
+        <li ng-repeat="x in names">
+            {{ x }}
+        </li>
+    </ul>
+</div>
+<div ng-init="names2=[{name:'Jani',country:'Norway'},{name:'Hege',country:'Sweden'},{name:'Kai',country:'Denmark'}]">
+    <ul>
+        <li ng-repeat="x in names2">
+            {{ x.name + ', ' + x.country }}
+        </li>
+    </ul>
+</div>
+
+<h4>The ng-app Directive</h4>
+<h4>The ng-init Directive</h4>
+<h4>The ng-model Directive</h4>
+<h4>Create New Directives</h4>
+element name:
+<w3-test-directive2></w3-test-directive2>
+Attribute:
+<div w3-test-directive2></div>
+Class:
+<div class="w3-test-directive2"></div>
+Comment:
+<!-- directive: w3-test-directive2 -->
+<h4>Restrictions</h4>
+MACE!
+
+

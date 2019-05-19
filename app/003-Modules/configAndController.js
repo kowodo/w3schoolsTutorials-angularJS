@@ -11,4 +11,10 @@ angular.module('myApp.003Modules', ['ngRoute'])
 
     .controller('ModulesCtrl', ['$scope', function ($scope) {
 
-    }]);
+    }])
+    .directive("w3TestDirective", function() {
+        return {
+            template : "<p>I was made in a directive constructor!</p>"
+        };
+    });
+
