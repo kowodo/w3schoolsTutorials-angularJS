@@ -11,6 +11,7 @@ angular.module('myApp', [
   'myApp.005Model',
   'myApp.006DataBinding',
   'myApp.007Controllers',
+  'myApp.008Scope',
   'myApp.version',
 
 ]).
