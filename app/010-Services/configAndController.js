@@ -9,7 +9,12 @@ angular.module('myApp.010Services', ['ngRoute'])
         });
     }])
 
-    .controller('ServicesCtrl', ['$scope', function ($scope) {
+    .controller('ServicesCtrl', ['$scope', '$location', '$http', function ($scope, $location, $http) {
+        $scope.myUrl = $location.absUrl();
+        $http.get("welcome.html").then(function(response){
+            $scope.myWelcome = response.data;
+        })
+
     }])
 
 
