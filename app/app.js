@@ -13,6 +13,7 @@ angular.module('myApp', [
   'myApp.007Controllers',
   'myApp.008Scope',
   'myApp.009Filters',
+  'myApp.010Services',
   'myApp.version',
 
 ]).
