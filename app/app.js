@@ -12,6 +12,7 @@ angular.module('myApp', [
   'myApp.006DataBinding',
   'myApp.007Controllers',
   'myApp.008Scope',
+  'myApp.009Filters',
   'myApp.version',
 
 ]).
