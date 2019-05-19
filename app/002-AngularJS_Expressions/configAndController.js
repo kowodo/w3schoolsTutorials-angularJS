@@ -10,6 +10,11 @@ angular.module('myApp.002Expressions', ['ngRoute'])
     }])
 
     .controller('ExpressionsCtrl', ['$scope', function ($scope) {
-        $scope.firstNameApp = 'AppFirstName';
-        $scope.lastNameApp = 'AppLastName';
+        $scope.myCol = 'lightblue';
+        $scope.quantity = 1;
+        $scope.cost = 5;
+        $scope.fistName = 'John';
+        $scope.lastName = 'Doe';
+        $scope.person={firstName:'John',lastName:'Doe'};
+        $scope.points=[1,15,19,2,40];
     }]);

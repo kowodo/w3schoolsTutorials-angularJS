@@ -1,6 +1,25 @@
 <H2>Chapter: AngularJS Expressions</H2>
 <h4>AngularJS Expressions</h4>
+<p> My first expression: {{5 + 5}}</p>
+Changing the color of the input box: <br>
+<input style="background-color:{{myCol}}" ng-model="myCol">
 
+<h4>AngularJS Numbers</h4>
+Using Expression
+<p>Total in dollar: {{quantity * cost }}</p>
+Using ng-bind
+<p>Total in dollar: <span ng-bind="quantity * cost"/></p>
 
+<h4>AngularJS Strings</h4>
+<p> The name is {{fistName + " " + lastName}}</p>
+<div>Same using the ng-bind:</div>
+<p>The name is <span ng-bind="fistName + ' ' + lastName"/></p>
 
+<h4>AngularJS Objects</h4>
+<p>The name is {{ person.lastName }}</p>
+<p>The name is <span ng-bind="person.lastName"></span></p>
+
+<h4>AngularJS Arrays</h4>
+<p>The third result is {{ points[2] }}</p>
+<p>The third result is <span ng-bind="points[2]"></span></p>
 
