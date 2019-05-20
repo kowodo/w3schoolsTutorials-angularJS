@@ -3,7 +3,59 @@
 <h4>Displaying Data in a Table</h4>
 <table>
     <tr ng-repeat="x in names">
-        <td>{{ x.Name }}</td>
-        <td>{{ x.Country }}</td>
+        <td>{{ x.name }}</td>
+        <td>{{ x.country }}</td>
+    </tr>
+</table>
+
+<h4>Displaying with CSS Style</h4>
+<style>
+    table, th, td {
+        border: 1px solid grey;
+        border-collapse: collapse;
+        padding: 5px;
+    }
+
+    table tr:nth-child(odd) {
+        background-color: #f1f1f1;
+    }
+
+    table tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+</style>
+
+<h4>Display with orderBy Filter</h4>
+<table>
+    <tr ng-repeat="x in names | orderBy:'country'">
+        <td>{{ x.name }}</td>
+        <td>{{ x.country }}</td>
+    </tr>
+</table>
+
+<h4>Display with uppercase Filter</h4>
+<table>
+    <tr ng-repeat="x in names">
+        <td>{{ x.name | uppercase }}</td>
+        <td>{{ x.country }}</td>
+    </tr>
+</table>
+
+<h4>Display the Table Index ($index)</h4>
+<table>
+    <tr ng-repeat="x in names">
+        <td>{{$index + 1}}</td>
+        <td>{{ x.name }}</td>
+        <td>{{ x.country }}</td>
+    </tr>
+</table>
+
+<h4>Using $even and $odd</h4>
+<table>
+    <tr ng-repeat="x in names">
+        <td ng-if="$odd" style="background-color:powderblue">{{ x.name }}</td>
+        <td ng-if="$even">{{ x.name }}</td>
+        <td ng-if="$odd" style="background-color:antiquewhite">{{ x.country }}</td>
+        <td ng-if="$even">{{ x.country }}</td>
     </tr>
 </table>
