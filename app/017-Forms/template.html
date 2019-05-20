@@ -1,3 +1,50 @@
 <H2>Chapter: AngularJS Forms</H2>
 
 <h4>Input Controls</h4>
+input elements <br>
+select elements <br>
+button elements <br>
+textarea elements <br>
+
+<h4>Data-Binding</h4>
+
+<h4>Checkbox</h4>
+<form>
+    Check to show a secret:
+    <input type="checkbox" ng-model="myVar">
+</form>
+
+<p ng-show="myVar">Secret</p>
+
+<h4>Radiobuttons</h4>
+<form>
+    Pick a topic:
+    <input type="radio" ng-model="topic" value="dogs">Dogs
+    <input type="radio" ng-model="topic" value="tuts">Tutorials
+    <input type="radio" ng-model="topic" value="cars">Cars
+</form>
+<div>Selected topic: {{topic}}</div>
+
+<h4>Selectbox</h4>
+<form>
+    Select another topic:
+    <select ng-model="anotherTopic">
+        <option value="">
+        <option value="dogs">Dogs
+        <option value="tuts">Tutorials
+        <option value="cars">Cars
+    </select>
+</form>
+<div>Another selected topic: {{anotherTopic}}</div>
+
+<h4>An AngularJS Form Example</h4>
+<form novalidate>
+    First Name:<br>
+    <input type="text" ng-model="user.firstName"><br>
+    Last Name:<br>
+    <input type="text" ng-model="user.lastName">
+    <br><br>
+    <button ng-click="reset()">RESET</button>
+</form>
+<p>form = {{user}}</p>
+<p>master = {{master}}</p>
