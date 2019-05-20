@@ -1,3 +1,13 @@
+# `w3schoolsTutorials-angularJS` -- my going thru of W3 Schools Angular JS Tutorial
+
+The tutorial is located here:  [`https://www.w3schools.com/angular/default.asp`][]
+
+Project is based on angular-seed project. 
+
+
+
+
+
 # `angular-seed` — the seed for AngularJS apps
 
 This project is an application skeleton for a typical [AngularJS][angularjs] web app. You can use it
