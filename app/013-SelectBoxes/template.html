@@ -1,3 +1,26 @@
 <H2>Chapter: Select Boxes</H2>
 
 <h4>Creating a Select Box Using ng-options</h4>
+<select ng-model="selectedName" ng-options="x for x in names">
+</select>
+
+<h4>ng-options vs ng-repeat</h4>
+<select>
+    <option ng-repeat="x in names">{{x}}</option>
+</select>
+
+<h4>What Do I Use?</h4>
+<select ng-model="selectedCar">
+    <option ng-repeat="x in cars" value="{{x.model}}">{{x.model}}</option>
+</select>
+<div>You selected: {{selectedCar}}</div>
+
+<select ng-model="selectedCar2" ng-options="x.model for x in cars"></select>
+<div>you selected: {{selectedCar2.model}}</div>
+<div>and its color is: {{selectedCar2.color}}</div>
+
+<h4>The Data Source as an Object</h4>
+<select ng-model="selectedCarObject" ng-options="x for (x, y) in carsObject"></select>
+<div>You selected {{selectedCarObject}}</div>
+<select ng-model="selectedCarObject2" ng-options="x for (x, y) in carsObject2"></select>
+<div>You selected {{selectedCarObject2}}</div>
