@@ -1,3 +1,23 @@
 <H2>Chapter: AngularJS Events</H2>
 
 <h4>AngularJS Events</h4>
+<div ng-mouseover="count = count + 1">Mouse over me!</div>
+{{count}}
+
+<h4>The ng-click Directive</h4>
+<button ng-click="countClick = countClick + 1">Click me!</button>
+{{countClick}}
+<button ng-click="increaseCountClick()">Increase Click count</button>
+
+<h4>Toggle, True/False</h4>
+<button ng-click="toggleShowMe()">Show Menu</button>
+<div ng-show="showMe">
+    <h5>Menu:</h5>
+    <div>Pizza</div>
+    <div>Pasta</div>
+    <div>Pesce</div>
+</div>
+
+<h4>$event Object</h4>
+<button ng-mouseover="eventTest($event)">Mouse Over me.</button>
+<p>Coordinates: {{x + ', ' + y}}</p>
