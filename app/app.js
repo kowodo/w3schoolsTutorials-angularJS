@@ -14,6 +14,8 @@ angular.module('myApp', [
   'myApp.008Scope',
   'myApp.009Filters',
   'myApp.010Services',
+  'myApp.011ajax',
+  'myApp.012tables',
   'myApp.version',
 
 ]).
