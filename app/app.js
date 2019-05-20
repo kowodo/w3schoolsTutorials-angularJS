@@ -17,6 +17,7 @@ angular.module('myApp', [
   'myApp.011ajax',
   'myApp.012tables',
   'myApp.013selectboxes',
+  'myApp.014angularsql',
   'myApp.version',
 
 ]).
