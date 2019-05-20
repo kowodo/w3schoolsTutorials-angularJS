@@ -1,3 +1,17 @@
 <H2>Chapter: AngularJS Form Validation</H2>
 
 <h4>Form Validation</h4>
+
+<h4>Required</h4>
+<form name="requiredForm">
+    <input name="requiredInput" ng-model="requiredInput" required>
+</form>
+<p>The input's valid state is: {{requiredForm.requiredInput.$valid}}</p>
+
+<h4>E-mail</h4>
+<form name="emailForm">
+    <input name="emailInput" ng-model="emailInput" type="email">
+</form>
+<p>The input's valid state is: {{emailForm.emailInput.$valid}}</p>
+
+<h4>Form State and Input State</h4>
