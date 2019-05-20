@@ -20,6 +20,7 @@ angular.module('myApp', [
   'myApp.014angularsql',
   'myApp.015htmldom',
   'myApp.016events',
+  'myApp.017forms',
   'myApp.version',
 
 ]).
