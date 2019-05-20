@@ -21,6 +21,7 @@ angular.module('myApp', [
   'myApp.015htmldom',
   'myApp.016events',
   'myApp.017forms',
+  'myApp.018formvalidation',
   'myApp.version',
 
 ]).
